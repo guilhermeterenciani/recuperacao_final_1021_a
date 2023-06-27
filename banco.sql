@@ -1,4 +1,4 @@
-drop database test;
+drop database if exists test;
 CREATE DATABASE  IF NOT EXISTS `test` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `test`;
 -- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
@@ -108,7 +108,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 
 
 LOCK TABLES `emprestimo` WRITE;
-/*!40000 ALTER TABLE `servidor` DISABLE KEYS */;
+/*!40000 ALTER TABLE `emprestimo` DISABLE KEYS */;
 INSERT INTO `emprestimo` VALUES (1,1,1,'2023-06-27','2023-06-30');
-/*!40000 ALTER TABLE `servidor` ENABLE KEYS */;
+/*!40000 ALTER TABLE `emprestimo` ENABLE KEYS */;
 UNLOCK TABLES;
