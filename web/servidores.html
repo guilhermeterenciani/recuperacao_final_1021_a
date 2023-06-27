@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Servidores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="./imagens/logo.png" alt="Logo IFMAKER"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servidores.html">Servidores</a></li>
+                <li><a href="itens.html">Itens</a></li>
+                <li><a href="emprestimos.html">Empréstimos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content_servidor">
+        <div>
+            <form id="form-cadastro" class="form-cadastro">
+                <label for="id">id</label>
+                <input type="text" name="id" id="id">
+                <label for="nome">nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="idade">idade</label>
+                <input type="text" name="idade" id="idade">
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <div class="lista_servidor">
+            <h1>Servidores Cadastrados</h1>
+
+            <table class="tabela" id="tabela">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Alterar</th>
+                        <th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="scripts/script_servidores.js"></script>
+</body>
+</html>
